@@ -1,0 +1,54 @@
+body {
+    background-color: lightseagreen;
+  }
+  .container1{
+    
+  }
+
+  .container2 {
+    background-color: black;
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 350px;
+    display: flex;
+  }
+  .left {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+   
+    margin-bottom: 60px;
+  }
+  .screen-body-item{
+    color: azure;
+    margin-top: 80px;
+    width: 50%;
+    
+    margin-bottom: 60px;
+  }
+  .app-form-button{
+    color: darkgreen;
+    background-color: black;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border-color: gray;
+    height: 50px;
+    width: 150px;
+  }
+  .app-form-button:hover{
+    color: white;
+
+  }
+.app-form-group-showData{
+    background-color: greenyellow;
+}
+   
+    
+
+
+  
