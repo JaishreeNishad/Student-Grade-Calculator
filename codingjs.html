@@ -10,10 +10,11 @@
 <body>
     <div class="container1">
         <div class="container2">
+        <div class="container3">
         <div class="left">
-            <h2>STUDENT<br/>
-            GRADE<br/>
-            CALCY</h2>
+            <h2>Student<br/>
+            Grade<br/>
+            Calcy</h2>
 
         </div>
         <div class="screen-body-item">
@@ -34,17 +35,18 @@
             </div>
             <hr/>
             <div class="app-form">
-                <input type="button" class="app-form-button" value="SHOWPERCENTAGE" onclick="calcy()"> 
-            </div>
-            </div>
-            <div class="app-form-group showdata">
-                <p id="showData"></p>
-
+                <input type="button" class="app-form-button" name="" value="SHOWPERCENTAGE" onclick="calcy()"> 
             </div>
         </div>
-
-           
+            
         </div>
+        <div class="app-form-group showdata">
+            <p id="showData"></p>
+
+        </div>
+    </div>
+
+    </div>
 
         <script>
             const calcy =() =>{
@@ -52,35 +54,33 @@
             let maths= document.getElementById('maths').value;
             let comp = document.getElementById('comp').value;
             let phy = document.getElementById('phy').value;
+            let grades = "";
 
             let totalGrades = parseFloat(wd) + parseFloat(maths) + parseFloat(comp) + parseFloat(phy);// parseFloat():In this method pass the value as a string and return a first number.
 
             alert(totalGrades);
 
-            let Perc = (totalGrades/400)*100;// find percebtarge //
-            alert(Perc);
-            // ----------find 
-
-            if(perc <=100 && perc >=80){
-                grades = 'A';
+            let perc = (totalGrades/400)*100;// find percebtarge //
+            alert(perc);
+            
+           
+            if(perc <= 100  && perc >= 80){
+                 grades = 'A';
+            }else if(perc <= 79  && perc >= 60){
+                 grades = 'B';
+            }else if(perc <= 59  && perc >= 40){
+                 grades = 'C';
+            }else{
+                 grades = 'F';
             }
-            else if (perc <= 79 && perc >= 60){
-                grades = 'B';
-            }
-            else if (perc <= 59 && perc >= 40 ){
-                grades = 'C';
-            }
-            else{
-                grades = 'F';
-            }
+            console.log(grades);
+            
             if(perc >= 39.5){
-            document.getElementById('showData').innerHTML = `Out of 400 your total is ${totalGrades} and percentage is ${perc}%. 
-            <br/> your grade is ${grades}. You are Pass.`
-        }
+         document.getElementById('showData').innerHTML = ` Out of 400 your total is  ${totalGrades} and percentage is ${perc}%. <br> Your grade is ${grades}. You are Pass. `
+         }
         else{
-            document.getElementById('showData').innerHTML = `Out of 400 your total is ${totalGrades}and percentage is ${perc}%. 
-            <br/> your grade is ${grades}. You are Fail.`
-        }
+         document.getElementById('showData').innerHTML = ` Out of 400 your total is  ${totalGrades} and percentage is ${perc}%. <br> Your grade is ${grades}. You are Fail. `
+         }
         
         }
         </script>

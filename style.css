@@ -1,11 +1,14 @@
-body {
-    background-color: lightseagreen;
-  }
+body{background:#33d9b2;
+font-size: 12px;
+}
   .container1{
     
   }
+  .container2{
+   
+  }
 
-  .container2 {
+  .container3 {
     background-color: black;
     height: 400px;
     width: 600px;
@@ -44,9 +47,13 @@ body {
     color: white;
 
   }
-.app-form-group-showData{
-    background-color: greenyellow;
-}
+  .showdata{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: -10px;
+    padding-bottom: 10px;
+  }
    
     
 
